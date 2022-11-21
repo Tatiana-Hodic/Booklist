@@ -3,7 +3,7 @@ using Booklist;
 
 Console.WriteLine("Program started");
 
-Console.WriteLine("Soubor k nacteni:");
+Console.WriteLine("File to load:");
 
 string file = Console.ReadLine();
 

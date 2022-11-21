@@ -12,8 +12,23 @@ namespace Booklist
         }
 
         public LiteratureEnum Literature { get; private set; }
+
         public int Pages { get; private set; }
+
         public int Year { get; private set; }
+
+        public override string ToString()
+        {
+            return
+                base.ToString() +
+                ";" +
+                this.Literature.ToString() +
+                ";" +
+                this.Pages.ToString() +
+                ";" +
+                this.Year.ToString()
+                ;
+        }
     }
 }
 

@@ -7,6 +7,7 @@ namespace Booklist
         GetAllBooks,
         Create,
         Delete,
+        GetBook,
         Finish
     }
 }

@@ -1,7 +1,7 @@
 ﻿using System;
 namespace Booklist
 {
-    public class BookBase
+    public class BookBase:IBook
     {
         public BookBase()
         {
@@ -18,6 +18,17 @@ namespace Booklist
         public string Name { get; private set; }
         public string HouseOfPublication { get; set; }
         public List<string> Authors { get; private set; }
+
+        public override string ToString()
+        {
+            var authors = this.Authors.Aggregate((a, b) => a + "," + b);
+            return
+                this.Name +
+                ";" +
+                this.HouseOfPublication +
+                ";" +
+                authors.ToString();
+        }
     }
 }
 

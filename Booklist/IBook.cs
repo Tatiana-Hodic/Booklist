@@ -3,8 +3,8 @@ namespace Booklist
 {
     public interface IBook
     {
-        string Name { get; set; }
-        string Author { get; set; }
+        string Name { get; }
+        List<string> Authors { get; }
+        string ToString();
     }
 }
-
